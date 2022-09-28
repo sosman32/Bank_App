@@ -17,7 +17,8 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             } text-white `}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={`#${nav.id}`}>
+              {nav.title}</a>
           </li>
         ))}
       </ul>
@@ -33,7 +34,7 @@ const Navbar = () => {
 
         <div
           className={`${toggle ? "flex" : "hidden"}
-          p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-x1 sidebar`}
+          p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
@@ -43,14 +44,15 @@ const Navbar = () => {
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 } text-white `}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`#${nav.id}`}>
+                  {nav.title}</a>
               </li>
             ))}
           </ul>
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 export default Navbar
